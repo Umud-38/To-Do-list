@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 340px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+.container::before {
+    content: '';
+    display: block;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 30px;
+    background: #FFDC40;
+    margin-bottom: 13px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.sort {
+    margin-bottom: 12px;
+    margin-left: 280px;
+    /* buna sonradan bax */
+    cursor: pointer;
+    /* fill: #C4C4C4; */
+    background: url(/Group\ 34\ \(2\).png);
+    width: 25px;
+    height: 15px;
+    
+}
+
+.sort:hover {
+    background: url(/Group\ 34\ \(1\).png);
+    
+    transition: 0.3s;
+   
+}
+
+.content {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 40px;
+    margin: 0 auto 18px;
+    padding: 0 28px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.text {
+    height: 35px;
+    width: 190px;
+    border: none;
+    font-size: 14px;
+    list-style: 16px;
+    outline: none;
+}
+
+.text::placeholder {
+    color: red;
+}
+
+.rmvBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: url(/Group\ 56.png);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.rmvBtn:hover {
+    background: url(/Group\ 70.png);
+    transition: 0.3s;
+}
+
+.tasks {
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    width: 290px;
+    margin: 0 auto 18px;
+    padding: 10px 28px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    list-style-type: none;
+}
+
+.task:last-child {
+    margin-bottom: 0;
+}
+
+.taskText {
+    width: 200px;
+}
+
+.button {
+    display: block;
+    position: relative;
+    border: none;
+    width: 150px;
+    height: 42px;
+    background: #833AE0;
+    border-radius: 71px;
+    margin: 0 auto 19px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button::before {
+    content: '+';
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    transition: 0.5s;
+    background: #9953F1;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button:hover::before {
+    width: inherit;
+    border-radius: inherit;
+    font-size: 25px;
+    transition: 0.5s;
+    color: #02e1ff;
+    transition-timing-function: ease;
+    box-shadow: 0px 2px 6px 2px #b490e1;
+}
